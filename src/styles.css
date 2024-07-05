@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    ::selection{
+
+        background-color: #F9E2EC;
+        color: #914768;
+    }
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
