@@ -1,4 +1,8 @@
 .explore-button {
     background-size: 200% 200%;
   }
+
+#id{
+  cursor: pointer;
+}
   
