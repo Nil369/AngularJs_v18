@@ -90,6 +90,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/angular_v18_tutorial",
+            "netlifyToken": "nfp_Vvovxv3ULTNQ7rhoCc5HFzgmfVDaaoam65d5",
+            "siteId": "dde99751-d361-4098-b090-769e0e9f8ddf"
+          }
         }
       }
     }
