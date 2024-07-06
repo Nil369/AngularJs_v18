@@ -98,17 +98,53 @@
   <!-- Mobile menu, show/hide based on menu state. -->
   <div class="sm:hidden" id="mobile-menu">
       <div class="space-y-1 px-2 pb-3 pt-2">
-          <a routerLink="data-binding" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">DataBinding</a>
-          <div class="dropdown">
-            <button class="dropdown-toggle rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Directives
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" routerLink="structural-dir">Structural</a></li>
-              <li><a class="dropdown-item" routerLink="attributedirective">Attributes</a></li>
-            </ul>
-          </div>
-          <a routerLink="pipes" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Pipes</a>
+        <a routerLink="data-binding" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">DataBinding</a>
+
+        <div class="dropdown">
+          <button class="dropdown-toggle rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Directives
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="structural-dir">Structural</a></li>
+            <li><a class="dropdown-item" routerLink="attributedirective">Attributes</a></li>
+            <li><a class="dropdown-item" routerLink="ng-template">ng-template</a></li>
+            <li><a class="dropdown-item" routerLink="ng-container">ng-container</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-toggle rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Control-Flow
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="for">For</a></li>
+            <li><a class="dropdown-item" routerLink="if-else">If-Else</a></li>
+          </ul>
+        </div>
+
+        <a routerLink="pipes" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Pipes</a>
+
+        <div class="dropdown">
+          <button class="dropdown-toggle rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Forms
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="template-form">Template</a></li>
+            <li><a class="dropdown-item" routerLink="reactive-form">Reactive</a></li>
+          </ul>
+        </div>
+
+        <!-- Dropdown for API Integrations -->
+        <div class="dropdown">
+          <button class="dropdown-toggle rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            API- Integration
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="api-get">GET - request</a></li>
+            <li><a class="dropdown-item" routerLink="api-post">POST - request</a></li>
+          </ul>
+        </div>
+        <a routerLink="life-cycle" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">LifeCycle-Events</a>
           
       
       </div>
