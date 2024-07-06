@@ -10,6 +10,9 @@ import { GetAPIComponent } from './components/apiIntegration/get-api/get-api.com
 import { PostAPIComponent } from './components/apiIntegration/post-api/post-api.component';
 import { ForComponent } from './components/controlFlow/for/for.component';
 import { IfelseComponent } from './components/controlFlow/ifelse/ifelse.component';
+import { NgtemplateComponent } from './components/directives/ngtemplate/ngtemplate.component';
+import { NgcontainerComponent } from './components/directives/ngcontainer/ngcontainer.component';
+import { LifecycleEventComponent } from './components/lifecycle-event/lifecycle-event.component';
 
 export const routes: Routes = [
     {
@@ -27,6 +30,14 @@ export const routes: Routes = [
     {
         path: 'attributedirective',
         component: AttributeDirectiveComponent
+    },
+    {
+        path: 'ng-template',
+        component: NgtemplateComponent
+    },
+    {
+        path: 'ng-container',
+        component: NgcontainerComponent
     },
     {
         path: 'pipes',
@@ -56,4 +67,9 @@ export const routes: Routes = [
         path: 'if-else',
         component: IfelseComponent
     },
+    {
+        path: 'life-cycle',
+        component: LifecycleEventComponent
+    },
+
 ];
