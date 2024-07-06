@@ -56,7 +56,7 @@ export class HomeComponent implements AfterViewInit {
       delay: 1,
       y: 50,
       opacity: 0,
-      ease: 'power3.out',
+      ease: 'linear',
       
     });
   }

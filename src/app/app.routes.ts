@@ -4,6 +4,12 @@ import { StructuralDirectiveComponent } from './components/directives/structural
 import { AttributeDirectiveComponent } from './components/directives/attribute-directive/attribute-directive.component';
 import { PipeComponent } from './components/pipe/pipe.component';
 import { HomeComponent } from './components/home/home.component';
+import { TemplateComponent } from './components/forms/template/template.component';
+import { ReactiveComponent } from './components/forms/reactive/reactive.component';
+import { GetAPIComponent } from './components/apiIntegration/get-api/get-api.component';
+import { PostAPIComponent } from './components/apiIntegration/post-api/post-api.component';
+import { ForComponent } from './components/controlFlow/for/for.component';
+import { IfelseComponent } from './components/controlFlow/ifelse/ifelse.component';
 
 export const routes: Routes = [
     {
@@ -25,5 +31,29 @@ export const routes: Routes = [
     {
         path: 'pipes',
         component: PipeComponent
+    },
+    {
+        path: 'template-form',
+        component: TemplateComponent
+    },
+    {
+        path: 'reactive-form',
+        component: ReactiveComponent
+    },
+    {
+        path: 'api-get',
+        component: GetAPIComponent
+    },
+    {
+        path: 'api-post',
+        component: PostAPIComponent
+    },
+    {
+        path: 'for',
+        component: ForComponent
+    },
+    {
+        path: 'if-else',
+        component: IfelseComponent
     },
 ];
